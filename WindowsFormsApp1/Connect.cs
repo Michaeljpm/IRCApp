@@ -21,14 +21,20 @@ namespace IRCApp
         public static StreamWriter writer;
         private Form1 form1;
 
-        public Connect(Form1 form1)
+        
+        public Connect(Form1 form1) 
         {
             this.form1 = form1;
         }
 
-       
+        
 
-        public bool makeConnection()
+        public Connect()
+        {
+
+        }
+
+        public void makeConnection()
         {
 
            
@@ -77,7 +83,7 @@ namespace IRCApp
                     writer.Close();
                     reader.Close();
                     irc.Close();
-                    return true;
+                    //return true;
                 }
 
             }
@@ -87,7 +93,7 @@ namespace IRCApp
                 form1.WriteMsg("test2");
                 Thread.Sleep(5000);
                 string[] argv = { };
-                return false;
+                //return false;
             }
         }
     }

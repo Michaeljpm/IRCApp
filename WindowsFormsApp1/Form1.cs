@@ -11,16 +11,18 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
-    public partial class Form1 : Form
+    public partial class Form1 : Form 
     {
         Connect c;
-
+        
         public Form1()
         {
             InitializeComponent();
             Connect c = new Connect(this);
+            
+            
             WriteMsg("Hello");
-            c.makeConnection();
+            
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
@@ -81,12 +83,13 @@ namespace WindowsFormsApp1
             
             
         }
-        public void StartThread()
+       
+
+        private void button2_Click(object sender, EventArgs e)
         {
-           Connect c1 = this.c;
-
-
+            Class1 cl1 = new Class1();
+            cl1.StartThread();
+            
         }
-
     }
 }
