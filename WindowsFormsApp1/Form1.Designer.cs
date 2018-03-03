@@ -1,4 +1,4 @@
-﻿namespace WindowsFormsApp1
+﻿namespace IRCApp
 {
     partial class Form1
     {
@@ -67,6 +67,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(602, 20);
             this.textBox1.TabIndex = 2;
+            this.textBox1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBox1_KeyDown);
             // 
             // button1
             // 
@@ -121,6 +122,7 @@
             this.button2.TabIndex = 8;
             this.button2.Text = "Connect";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_click);
             // 
             // textBox3
             // 
@@ -128,6 +130,7 @@
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(100, 20);
             this.textBox3.TabIndex = 9;
+            this.textBox3.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBox1_KeyDown);
             // 
             // label3
             // 
@@ -138,7 +141,6 @@
             this.label3.TabIndex = 10;
             this.label3.Text = "Channel";
             this.label3.Click += new System.EventHandler(this.label3_Click);
-            
             // 
             // Form1
             // 
@@ -177,7 +179,7 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label3;
-        
+
     }
 }
 

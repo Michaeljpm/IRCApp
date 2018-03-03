@@ -35,7 +35,7 @@
     <ApplicationIcon>Irc.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>WindowsFormsApp1.Program</StartupObject>
+    <StartupObject>IRCApp.Program</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
