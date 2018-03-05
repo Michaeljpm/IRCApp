@@ -8,21 +8,23 @@ using System.Net.Sockets;
 using System.IO;
 using System.Threading;
 
-namespace WindowsFormsApp1
+namespace IRCApp
 {
-    static class Program
+    public class Program
     {
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
+
+        public static Connect connectClass;
         [STAThread]
         static void Main()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
-            
+
         }
-        
+
     }
 }
