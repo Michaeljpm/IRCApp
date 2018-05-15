@@ -19,7 +19,7 @@ namespace IRCApp
     public class Connect
     {
         public string inputLine;
-        public string Channel = "#M_";
+        
 
         public Form1 mainForm;
         public Connect(Form1 mainfm)
@@ -28,7 +28,7 @@ namespace IRCApp
             mainForm = mainfm;
         }
 
-        public async void makeConnection(StreamReader reader, StreamWriter writer, string User, string Nick)
+        public async void makeConnection(StreamReader reader, StreamWriter writer, string User, string Nick, string Channel)
         {
             try
             {
@@ -42,7 +42,8 @@ namespace IRCApp
                     {
                         mainForm.Invoke(new MethodInvoker(delegate ()
                         {
-                            mainForm.MainMsgBox.Items.Add(inputLine);
+                            mainForm.Writebox(inputLine);
+                            
                         }));
                         string[] splitInput = inputLine.Split(new Char[] { ' ' });
                         if (splitInput[0] == "PING")

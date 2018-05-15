@@ -29,8 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.MainMsgBox = new System.Windows.Forms.ListBox();
-            this.listBox2 = new System.Windows.Forms.ListBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.listBox3 = new System.Windows.Forms.ListBox();
@@ -40,26 +38,8 @@
             this.button2 = new System.Windows.Forms.Button();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
             this.SuspendLayout();
-            // 
-            // MainMsgBox
-            // 
-            this.MainMsgBox.FormattingEnabled = true;
-            this.MainMsgBox.HorizontalScrollbar = true;
-            this.MainMsgBox.Location = new System.Drawing.Point(178, 51);
-            this.MainMsgBox.Name = "MainMsgBox";
-            this.MainMsgBox.ScrollAlwaysVisible = true;
-            this.MainMsgBox.Size = new System.Drawing.Size(690, 485);
-            this.MainMsgBox.TabIndex = 0;
-            this.MainMsgBox.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
-            // 
-            // listBox2
-            // 
-            this.listBox2.FormattingEnabled = true;
-            this.listBox2.Location = new System.Drawing.Point(897, 52);
-            this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(120, 485);
-            this.listBox2.TabIndex = 1;
             // 
             // textBox1
             // 
@@ -130,6 +110,7 @@
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(100, 20);
             this.textBox3.TabIndex = 9;
+            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             this.textBox3.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBox1_KeyDown);
             // 
             // label3
@@ -142,11 +123,21 @@
             this.label3.Text = "Channel";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
+            // tabControl1
+            // 
+            this.tabControl1.Location = new System.Drawing.Point(178, 43);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(900, 505);
+            this.tabControl1.TabIndex = 11;
+            this.tabControl1.SelectedIndexChanged += new System.EventHandler(this.tabControl1_SelectedIndexChanged);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1079, 597);
+            this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.button2);
@@ -156,8 +147,6 @@
             this.Controls.Add(this.listBox3);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.listBox2);
-            this.Controls.Add(this.MainMsgBox);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "IRCApp";
@@ -168,18 +157,19 @@
         }
 
         #endregion
-        private System.Windows.Forms.ListBox listBox2;
+        private System.Windows.Forms.ListBox[] listBox2 = new System.Windows.Forms.ListBox[1000];
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.ListBox listBox3;
         private System.Windows.Forms.TextBox textBox2;
-        public System.Windows.Forms.ListBox MainMsgBox;
+        public System.Windows.Forms.ListBox[] listBox = new System.Windows.Forms.ListBox[1000];
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label3;
-
+        public System.Windows.Forms.TabPage[] tabPage = new System.Windows.Forms.TabPage[1000];
+        private System.Windows.Forms.TabControl tabControl1;
     }
 }
 

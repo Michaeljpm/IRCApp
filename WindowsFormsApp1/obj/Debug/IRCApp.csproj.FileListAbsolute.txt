@@ -27,3 +27,13 @@ C:\Users\Zaldimmar\Source\Repos\IRCApp\WindowsFormsApp1\obj\Debug\IRCApp.csproj.
 C:\Users\Zaldimmar\Source\Repos\IRCApp\WindowsFormsApp1\obj\Debug\IRCApp.exe
 C:\Users\Zaldimmar\Source\Repos\IRCApp\WindowsFormsApp1\obj\Debug\IRCApp.pdb
 C:\Users\Zaldimmar\Source\Repos\IRCApp\WindowsFormsApp1\obj\Debug\IRCApp.Form1.resources
+C:\Users\mmaddux\Source\Repos\IRCApp1\WindowsFormsApp1\bin\Debug\IRCApp.exe.config
+C:\Users\mmaddux\Source\Repos\IRCApp1\WindowsFormsApp1\bin\Debug\IRCApp.exe
+C:\Users\mmaddux\Source\Repos\IRCApp1\WindowsFormsApp1\bin\Debug\IRCApp.pdb
+C:\Users\mmaddux\Source\Repos\IRCApp1\WindowsFormsApp1\obj\Debug\IRCApp.Form1.resources
+C:\Users\mmaddux\Source\Repos\IRCApp1\WindowsFormsApp1\obj\Debug\IRCApp.Properties.Resources.resources
+C:\Users\mmaddux\Source\Repos\IRCApp1\WindowsFormsApp1\obj\Debug\IRCApp.csproj.GenerateResource.Cache
+C:\Users\mmaddux\Source\Repos\IRCApp1\WindowsFormsApp1\obj\Debug\IRCApp.csproj.CoreCompileInputs.cache
+C:\Users\mmaddux\Source\Repos\IRCApp1\WindowsFormsApp1\obj\Debug\IRCApp.exe
+C:\Users\mmaddux\Source\Repos\IRCApp1\WindowsFormsApp1\obj\Debug\IRCApp.pdb
+C:\Users\mmaddux\Source\Repos\IRCApp1\WindowsFormsApp1\obj\Debug\IRCApp.csprojResolveAssemblyReference.cache
